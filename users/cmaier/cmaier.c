@@ -170,7 +170,7 @@ void process_record_keyboard(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case KC_MAKE:
       if (isPressed) {
-        send_string_with_delay_P(PSTR("make " QMK_KEYBOARD ":" QMK_KEYMAP ":dfu" SS_TAP(X_ENTER)), MACRO_TIMER);
+        send_string_with_delay_P(PSTR("qmk flash -kb " QMK_KEYBOARD " -km " QMK_KEYMAP SS_TAP(X_ENTER)), MACRO_TIMER);
       }
       break;
 
