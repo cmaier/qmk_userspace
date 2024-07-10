@@ -27,8 +27,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_SPACE_FN] = LAYOUT_all(
       KC_GRV,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,  KC_NO,
-      KC_SWTR, _______, KC_PGUP, _______, _______, _______, _______, KC_HOME,  KC_UP,  KC_END, _______, _______, _______,          _______,
-     _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_PGUP, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______,                   _______,
+      KC_SWTR, _______, KC_PGUP, _______, _______, _______, KC_PGUP, KC_HOME, KC_END, _______, _______, _______, _______,          _______,
+     _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, _______, _______,                   _______,
      _______, _______, _______, _______, _______, _______,  KC_SPC, KC_PGDN, _______, _______, _______, _______,          _______,  KC_NO,
      _______, _______, _______,   KC_NO,                        _______,                         KC_NO, _______, _______, _______, _______
   ),
@@ -59,8 +59,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_GAMING_FN] = LAYOUT_all(
       KC_GRV,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,  KC_NO,
-      KC_SWTR, _______, KC_PGUP, _______, _______, _______, _______, KC_HOME,  KC_UP,  KC_END, _______, _______, _______,          _______,
-     _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_PGUP, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______,                   _______,
+      KC_SWTR, _______, KC_PGUP, _______, _______, _______, KC_PGUP, KC_HOME, KC_END, _______, _______, _______, _______,          _______,
+     _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, _______, _______,                   _______,
      _______, _______, _______, _______, _______, _______,  KC_SPC, KC_PGDN, _______, _______, _______, _______,          _______,  KC_NO,
      _______, _______, _______,   KC_NO,                        _______,                         KC_NO, _______, _______, _______, _______
   ),
