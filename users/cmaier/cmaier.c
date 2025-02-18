@@ -70,13 +70,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 void matrix_scan_user(void) {
     // KC_LIVE, Keep alive!
-    if (timer_elapsed32(key_keep_alive_timer) > 1500) { // 5 seconds
+    if (timer_elapsed32(key_keep_alive_timer) > 227000) { // 3'47"
         key_keep_alive_timer = timer_read32();  // resets timer
         if (key_keep_alive_trigger) { // tap if enabled
             tap_code(KC_MS_RIGHT);
-            tap_code(KC_MS_DOWN);
+            // tap_code(KC_MS_DOWN);
             tap_code(KC_MS_LEFT);
-            tap_code(KC_MS_UP);
+            // tap_code(KC_MS_UP);
         }
     }
 }
