@@ -73,9 +73,9 @@ void matrix_scan_user(void) {
     if (timer_elapsed32(key_keep_alive_timer) > 260000) { // 4'20"
         key_keep_alive_timer = timer_read32();  // resets timer
         if (key_keep_alive_trigger) { // tap if enabled
-            tap_code(KC_MS_RIGHT);
+            tap_code(MS_RGHT);
             // tap_code(KC_MS_DOWN);
-            tap_code(KC_MS_LEFT);
+            tap_code(MS_LEFT);
             // tap_code(KC_MS_UP);
         }
     }

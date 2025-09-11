@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 //   [_KEYBOARD_CONFIG] = LAYOUT_60_ansi_kc(
 //        KC_NO,   _,   _,   _,   _,   _,   _,   _,   _,   _,   _,   _,   _,  QK_BOOT,
-//         _,RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, _, _, _, _, _,
+//         _,UG_TOGG, UG_NEXT, UG_HUEU, UG_HUED, UG_SATU, UG_SATU, UG_SATU, UG_SATD, _, _, _, _, _,
 //                _,BASE,   _,   _,   _,   _,   _,   _,   _,LIVE,   _,   _,         _,
 //                  _,GAME,   _,   _,VRSN,   _,   _,MAKE,   _,   _,   _,            _,
 //             _,    _,    _,                _              ,    _,    _,    _,    _)
