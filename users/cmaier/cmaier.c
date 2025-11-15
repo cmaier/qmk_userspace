@@ -85,7 +85,7 @@ enum combo_events {
   KBD_CONFIG,
 };
 
-const uint16_t PROGMEM kbd_combo[] = {KC_LALT, KC_RALT, COMBO_END};
+const uint16_t PROGMEM kbd_combo[] = {KC_LCTL, KC_RCTL, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
   [KBD_CONFIG] = COMBO_ACTION(kbd_combo),
