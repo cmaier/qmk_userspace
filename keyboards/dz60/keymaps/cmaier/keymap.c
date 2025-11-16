@@ -12,26 +12,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_SPACE_FN] = LAYOUT_60_ansi(
       KC_GRV,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12,  KC_DEL,
-     KC_SWTR,   KC_NO,   KC_UP,   KC_NO,   KC_NO,   KC_NO, KC_PGUP, KC_HOME,  KC_END, _______, _______, _______, _______, _______,
-     _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, _______, _______,          _______,
-     _______, _______, _______, _______, _______,  KC_SPC, KC_PGDN, _______, _______, _______, _______,                   _______,
-     _______, _______, _______,                            _______,                            _______, _______, _______, _______
+     KC_SWTR, XXXXXXX,   KC_UP, XXXXXXX, XXXXXXX, XXXXXXX, KC_PGUP, KC_HOME,  KC_END, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, XXXXXXX, XXXXXXX,          XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_SPC, KC_PGDN, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
   ),
 
   [_MACOS_FN] = LAYOUT_60_ansi(
-       KC_NO, KC_BRDN, KC_BRUP, KC_MCTL, KC_AWND, _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU,   KC_NO,
-     _______,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, _______, _______, _______, _______, _______,
-     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______,
-     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,                   KC_TERM,
-     _______, _______, _______,                            _______,                            _______, _______, _______, _______
+     XXXXXXX, KC_BRDN, KC_BRUP, KC_MCTL, KC_AWND, XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   KC_TERM,
+     XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
   ),
 
   [_INTELLIJ] = LAYOUT_60_ansi(
-       KC_NO, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,   KC_NO,
-     _______,   KC_NO,   KC_NO,   KC_NO, KC_RNME,   KC_NO,   KC_NO, KC_USGE, KC_INLN, _______, KC_RPRP, _______, _______, _______,
-     _______, KC_RTAS, KC_SIGN, KC_ADBR, _______, _______, _______, _______, _______, _______, _______, _______,          _______,
-     _______, _______, _______, _______, KC_RVAR, _______, _______, KC_RFUN, _______, _______, _______,                   _______,
-     _______, _______, _______,                            _______,                            _______, _______, _______, _______
+XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_RNME, XXXXXXX, XXXXXXX, KC_USGE, KC_INLN, XXXXXXX, KC_RPRP, XXXXXXX, XXXXXXX, XXXXXXX,
+     XXXXXXX, KC_RTAS, KC_SIGN, KC_ADBR, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_RVAR, XXXXXXX, XXXXXXX, KC_RFUN, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
   ),
 
   [_GAMING] = LAYOUT_60_ansi(
@@ -44,25 +44,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_GAMING_FN] = LAYOUT_60_ansi(
       KC_GRV,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12,  KC_DEL,
-     KC_SWTR,   KC_NO,   KC_UP,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_HOME,   KC_UP,  KC_END, _______, _______, _______, _______,
-     _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_PGUP, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______,          _______,
-     _______, _______, _______, _______, _______,  KC_SPC, KC_PGDN, _______, _______, _______, _______,                   _______,
-     _______, _______, _______,                            _______,                            _______, _______, _______, _______
+     KC_SWTR, XXXXXXX,   KC_UP, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_HOME,   KC_UP,  KC_END, _______, _______, _______, _______,
+     XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX, KC_PGUP, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX,          XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_SPC, KC_PGDN, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
   ),
 
   [_GAMING_MEDIA] = LAYOUT_60_ansi(
-       KC_NO, _______, _______, _______, _______, _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU,  KC_DEL,
-     _______,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_HOME,   KC_UP,  KC_END, _______, _______, _______, _______,
-     _______, _______, _______, _______, _______, _______, KC_PGUP, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______,          _______,
-     _______, _______, _______, _______, _______,  KC_SPC, KC_PGDN, _______, _______, _______, _______,                   _______,
-     _______, _______, _______,                            _______,                            _______, _______, _______, _______
+XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU,  KC_DEL,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_HOME,   KC_UP,  KC_END, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PGUP, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX,          XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_SPC, KC_PGDN, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
   ),
 
   [_KEYBOARD_CONFIG] = LAYOUT_60_ansi(
-       KC_NO, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, QK_BOOT,
-     _______, UG_TOGG, UG_NEXT, UG_HUEU, UG_HUED, UG_SATU, UG_SATU, UG_SATU, UG_SATD, _______, _______, _______, _______, _______,
-     _______, KC_GAME, _______, _______, _______, _______, _______, _______, _______, KC_LIVE, _______, _______,          _______,
-     _______, KC_BASE, _______, _______, KC_VRSN, _______, _______, KC_MAKE, _______, _______, _______,                   _______,
-     _______, _______, _______,                            _______,                            _______, _______, _______, _______
+XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT,
+     XXXXXXX, UG_TOGG, UG_NEXT, UG_HUEU, UG_HUED, UG_SATU, UG_SATU, UG_SATU, UG_SATD, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     XXXXXXX, KC_GAME, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LIVE, XXXXXXX, XXXXXXX,          XXXXXXX,
+     XXXXXXX, KC_BASE, XXXXXXX, XXXXXXX, KC_VRSN, XXXXXXX, XXXXXXX, KC_MAKE, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
   )
 };
