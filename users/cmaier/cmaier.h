@@ -73,6 +73,13 @@ enum {
   TD_LOWER_SFN
 };
 
+#define HOME_S LCTL_T(KC_S)
+#define HOME_D LALT_T(KC_D)
+#define HOME_F LGUI_T(KC_F)
+#define HOME_J RGUI_T(KC_J)
+#define HOME_K RALT_T(KC_K)
+#define HOME_L RCTL_T(KC_L)
+
 #define TO_BASE  TO(_BASE)
 #define LT_SFN   LT(_SPACE_FN, KC_SPC)
 #define MT_GUEN  MT(MOD_RGUI, KC_ENT)
