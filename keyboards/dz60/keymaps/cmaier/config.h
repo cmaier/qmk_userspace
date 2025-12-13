@@ -2,7 +2,6 @@
 #define CONFIG_KEYMAP_H
 
 //#include "../../config.h"
-// #include "../../dz60-ansi-kc.h"
 
 // Fix KC_GESC conflict with Cmd+Alt+Esc on macos
 #define GRAVE_ESC_GUI_OVERRIDE

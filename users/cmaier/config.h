@@ -17,6 +17,6 @@
 #pragma once
 
 #define MACRO_TIMER 5
-#define TAPPING_TERM 200
+#define TAPPING_TERM 300
 #define COMBO_COUNT 1
 #define NKRO_DEFAULT_ON true

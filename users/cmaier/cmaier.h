@@ -20,17 +20,17 @@
 
 #define RGB_MY_PINK        161, 23, 95
 
-#define TAPPING_TERM 200
-
 enum layer_names {
     _BASE,
+    _LOWER,
+    _RAISE,
+    _CONFIG,
     _SPACE_FN,
     _MACOS_FN,
     _INTELLIJ,
     _GAMING,
     _GAMING_FN,
-    _GAMING_MEDIA,
-    _KEYBOARD_CONFIG,
+    _GAMING_MEDIA
 };
 
 enum custom_keycodes {
@@ -42,6 +42,8 @@ enum custom_keycodes {
   KC_SWTR,               // macOS: App Window Switcher
   KC_AWND,               // macOS: App Windows
   KC_TERM,               // macOS: iTerm hotkey
+  KC_TBAK,               // macOS: Tab back
+  KC_TFWD,               // macOS: Tab forward
 
   KC_ADBR,               // IntelliJ: Attach debugger
   KC_RFUN,               // IntelliJ: Refactor function
@@ -53,7 +55,7 @@ enum custom_keycodes {
   KC_SIGN,               // IntelliJ: Change signature
   KC_USGE,               // IntelliJ: Find usage
 
-  KC_LIVE,               // Keep alive loop
+  KC_KLVE,               // Keep alive loop
 
   NEW_SAFE_RANGE         // use "NEW_SAFE_RANGE" for keymap specific codes
 };
@@ -67,17 +69,21 @@ enum {
 
 //Tap dance enums
 enum {
-  TD_FN = 0,
-  SOME_OTHER_DANCE
+  TD_FN,
+  TD_LOWER_SFN
 };
 
-#define KC_BASE  TO(_BASE)
-#define KC_SFN   LT(_SPACE_FN, KC_SPC)
-#define KC_MAC   MO(_MACOS_FN)
-#define KC_INTJ  MO(_INTELLIJ)
-#define KC_GAME  TO(_GAMING)
-#define KC_GFUN  MO(_GAMING_FN)
-#define KC_GMMA  MO(_GAMING_MEDIA)
+#define TO_BASE  TO(_BASE)
+#define LT_SFN   LT(_SPACE_FN, KC_SPC)
+#define MT_GUEN  MT(MOD_RGUI, KC_ENT)
+#define MT_SFTB  MT(MOD_RSFT, KC_TAB)
+#define MO_MAC   MO(_MACOS_FN)
+#define MO_INTJ  MO(_INTELLIJ)
+#define TO_GAME  TO(_GAMING)
+#define MO_LWR   MO(_LOWER)
+#define MO_RSE   MO(_RAISE)
+#define MO_CFG   MO(_CONFIG)
+#define TD_LSFN  TD(TD_LOWER_SFN)
 
 #define MAGIC_KEY_LOCK  L
 
@@ -86,3 +92,5 @@ void process_record_keyboard(uint16_t keycode, keyrecord_t *record);
 bool process_record_macos(uint16_t keycode, keyrecord_t *record);
 
 void process_record_intellij(uint16_t keycode, keyrecord_t *record);
+
+void set_keylog(uint16_t keycode, keyrecord_t *record);
