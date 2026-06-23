@@ -42,6 +42,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case KC_TERM:
         case KC_TBAK:
         case KC_TFWD:
+        case LP_C:
+        case LP_V:
+        case LP_T:
+        case LP_R:
+        case LP_N:
             return process_record_macos(keycode, record);
 
         case KC_ADBR:
@@ -304,7 +309,7 @@ bool process_record_macos(uint16_t keycode, keyrecord_t *record) {
 
     case KC_AWND:
       if (isPressed) {
-        SEND_STRING(SS_LCTL(SS_TAP(X_DOWN)));
+        SEND_STRING(SS_LCTL(SS_TAP(X_UP)));
       }
       break;
 
@@ -325,6 +330,46 @@ bool process_record_macos(uint16_t keycode, keyrecord_t *record) {
         SEND_STRING(SS_LGUI(SS_LSFT("]")));
       }
       break;
+
+    case LP_C:
+      if (record->tap.count && record->event.pressed) {
+        SEND_STRING("c");
+      } else if (record->event.pressed) {
+        SEND_STRING(SS_LGUI("c"));
+      }
+      return false;
+
+    case LP_V:
+      if (record->tap.count && record->event.pressed) {
+        SEND_STRING("v");
+      } else if (record->event.pressed) {
+        SEND_STRING(SS_LGUI("v"));
+      }
+      return false;
+
+    case LP_T:
+      if (record->tap.count && record->event.pressed) {
+        SEND_STRING("t");
+      } else if (record->event.pressed) {
+        SEND_STRING(SS_LGUI("t"));
+      }
+      return false;
+
+    case LP_R:
+      if (record->tap.count && record->event.pressed) {
+        SEND_STRING("r");
+      } else if (record->event.pressed) {
+        SEND_STRING(SS_LGUI("r"));
+      }
+      return false;
+
+    case LP_N:
+      if (record->tap.count && record->event.pressed) {
+        SEND_STRING("n");
+      } else if (record->event.pressed) {
+        SEND_STRING(SS_LGUI("n"));
+      }
+      return false;
   }
 
   return true;

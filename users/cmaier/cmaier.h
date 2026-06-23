@@ -34,13 +34,19 @@ enum layer_names {
 };
 
 enum custom_keycodes {
+  LP_C = LT(0, KC_C),    // macOS: C/Cmd+C
+  LP_V = LT(0, KC_V),    // macOS: V/Cmd+V
+  LP_T = LT(0, KC_T),    // macOS: T/Cmd+T
+  LP_R = LT(0, KC_R),    // macOS: R/Cmd+R
+  LP_N = LT(0, KC_N),    // macOS: N/Cmd+N
+
   KC_MAKE = SAFE_RANGE,  // kdb: Compiles firmware
   KC_VRSN,               // kbd: QMK version
 
   KC_BRDN,               // macOS: Brightness up
   KC_BRUP,               // macOS: Brightness down
   KC_SWTR,               // macOS: App Window Switcher
-  KC_AWND,               // macOS: App Windows
+  KC_AWND,               // macOS: All Windows
   KC_TERM,               // macOS: iTerm hotkey
   KC_TBAK,               // macOS: Tab back
   KC_TFWD,               // macOS: Tab forward

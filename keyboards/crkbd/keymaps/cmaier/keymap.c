@@ -22,13 +22,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      QK_GESC,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC,
+      QK_GESC,    KC_Q,    KC_W,    KC_E,    LP_R,    LP_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,
+      KC_LCTL,    KC_A,  HOME_S,  HOME_D,  HOME_F,    KC_G,                         KC_H,  HOME_J,  HOME_K,  HOME_L, KC_SCLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, MT_SFTB,
+      KC_LSFT,    KC_Z,    KC_X,    LP_C,    LP_V,    KC_B,                         LP_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, MT_SFTB,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, KC_LGUI,  LT_SFN,    MT_GUEN, TD_LSFN,  MO_RSE
+                                           LP_SFN, KC_LGUI,  LT_SPC,    MT_GUEN, TD_LSFN,  MO_RSE
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -58,9 +58,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_SPACE_FN] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_SWTR, _______, _______, KC_MPRV, KC_MPLY, KC_MNXT,                      KC_BRDN, KC_BRUP, KC_MUTE, KC_VOLD, KC_VOLU, _______,
+      KC_SWTR, _______, KC_MPRV, KC_MPLY, KC_MNXT, _______,                      KC_BRDN, KC_BRUP, KC_MUTE, KC_VOLD, KC_VOLU, _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______, _______, _______, KC_PGDN, KC_PGUP, _______,                      KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, _______, _______,
+      _______, _______, KC_TBAK, KC_AWND, KC_TFWD, _______,                      KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, _______, _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       _______, _______, _______, _______, _______, _______,                      KC_HOME, KC_TERM,  KC_END, _______, KC_TBAK, KC_TFWD,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
